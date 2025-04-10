@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Expense Logger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Expense Logger</h1>
+
+    <section id="set-budget">
+       <h2>Set Your Budget</h2> <input type="number" id="budget-input" placeholder="Enter Budget Amount ($)" required>
+       <button id="set-budget-button">Set Budget</button>
+    </section>
+
+    <section id="budget-summary">
+      <h2>Budget Summary</h2>
+      <span id="total-budget">Total Budget: $0</span>
+      <span id="total-expenses">Total Expenses: $0</span>
+      <span id="remaining-balance">Remaining Balance: $0</span>
+    </section>
+
+    <form id="expense-form">
+      <h2>Add New Expense</h2> <input type="text" id="description" placeholder="Expense Description" required>
+      <input type="number" id="amount" placeholder="Amount ($)" required>
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <section id="expense-list-container"> <h2>Expenses</h2>
+        <ul id="expense-list">
+          </ul>
+    </section>
+
+  </div> <script src="script.js"></script>
+</body>
+</html>
